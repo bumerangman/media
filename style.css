@@ -1,0 +1,41 @@
+body {
+    background-color: darkseagreen;
+}
+button, .grid_item {
+    background-color: rgb(130, 130, 216);
+    border: 3px solid blue;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+@media (max-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* @media (max-width: 700px) {
+    body {
+        background-color: red;
+    } 
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } */
